@@ -26,10 +26,7 @@ class NewsSearch extends Component {
       });
   };
 
-  componentDidMount() {
-    // Fetch berita awal jika diperlukan
-    // this.fetchNews();
-  }
+ 
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.searchTerm !== this.state.searchTerm) {
