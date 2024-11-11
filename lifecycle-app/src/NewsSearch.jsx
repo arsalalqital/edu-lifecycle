@@ -15,7 +15,7 @@ class NewsSearch extends Component {
 
   fetchNews = () => {
     fetch(
-      `https://newsapi.org/v2/everything?apiKey=5d8c9716e2b648958bafb593a1a90ef2&q=${this.state.searchTerm}`
+      `https://newsdata.io/api/1/latest?apikey=pub_589164611d24b26576e1d8ca51df40dc65450&q=donald%20trump&region=washington-united%20states%20of%20america${this.state.searchTerm}`
     )
       .then((response) => response.json())
       .then((data) => {
